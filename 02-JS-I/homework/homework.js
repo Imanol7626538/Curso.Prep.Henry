@@ -250,7 +250,7 @@ function esVocal(letra){
     console.log("Dato incorrecto")
   }
   else{
-  if (letra != a, e, i, o, u){
+  if (letra !== a, e, i, o, u){
     console.log("Dato incorrecto")
     }else{
       console.log("Es vocal")
