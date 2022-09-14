@@ -1,5 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
+const { promedioResultadosTest } = require("../../04-JS-III/homework/homework");
+
 // Crea una variable "string", puede contener lo que quieras:
 const nuevaString = 'imanol';
 
@@ -28,7 +30,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  str == 'hola'
+  var str = 'hola'
   return str
 }
 
@@ -38,7 +40,7 @@ function suma(x, y) {
   // Tu código:
   var x = 2
   var y = 3
-  Suma=x+y
+  var resultado = x + y
 }
 
 function resta(x, y) {
@@ -46,7 +48,7 @@ function resta(x, y) {
   // Tu código:
   var x = 2
   var y = 3
-  Resta=x-y
+  var resultado = x - y
 }
 
 function multiplica(x, y) {
@@ -54,7 +56,7 @@ function multiplica(x, y) {
   // Tu código:
   var x = 2
   var y = 3
-  multiplicacion=x*y
+  var resultado = x * y
 }
 
 function divide(x, y) {
@@ -62,27 +64,28 @@ function divide(x, y) {
   // Tu código:
   var x = 2
   var y = 3
-  Division=x/y
+  var resultado = x / y
 }
 
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-if (x == y){
-  console.log(true)
+if (x === y){
+  return true
 } else{
-    console.log(false)
+    return false
 }
 }
+
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (length(str1) == length(str2)){
-    console.log(true)
+  if (str1.lenght == str2.lenght){
+    return true
   } else {
-    console.log(false)
+    return false
   }
 }
 
@@ -91,9 +94,9 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
  if (num < 90){
-  console.log(true)
+  return true
  }else{
-  console.log(false)
+ return false
  }
 }
 
@@ -102,9 +105,9 @@ function mayorQueCincuenta(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
  if (num > 50){
-  console.log(true) 
+  return true 
  } else {
-  console.log(false)
+  return false
  }
 }
 
@@ -113,8 +116,8 @@ function obtenerResto(x, y) {
   // Tu código:
   var x = 2
   var y = 3
-  Resto = x % y
-  console.log(Resto)
+  var resto = x % y
+  console.log(resto)
 }
 
 function esPar(num) {
@@ -122,23 +125,21 @@ function esPar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num % 2 == 0){
-    console.log(true)
+    return true
   } else {
-    console.log(false)
+    return false
   }
-
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (n % 2 == 1){
-    console.log(true)
+  if (num % 2 == 1){
+    return true
   } else{
-    console.log(false)
+    return false
   }
-  
 }
 
 function elevarAlCuadrado(num) {
@@ -173,7 +174,7 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  toFixed(num)
+  Math.ceil(num)
   console.log(num)
 }
 
@@ -193,6 +194,10 @@ function esPositivo(numero) {
   }else{
     if (numero < 0){
       console.log('Es negativo')
+    } else {
+      if (numero == 0) {
+        return false
+      }
     }
   }
 }
@@ -201,6 +206,7 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+  var str = "hola"
    console.log(str + '!')
 }
 
@@ -208,6 +214,8 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
+  var nombre = "imanol"
+  var apellido = "gonzalez"
   console.log(nombre + apellido)
 }
 
@@ -215,27 +223,36 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
+  var nombre = "imanol"
   console.log('Hola ' + nombre + '!')
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  console.log(ancho * alto)
+  var alto = 12
+  var ancho = 23
+  var area = ancho * alto
+  console.log(area)
 }
 
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  console.log(lado * 4)
+  var lado = 12 
+  var perimetro = lado * 4
+  console.log(perimetro)
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  console.log(base * altura / 2)
+  var base = 2
+  var altura = 3
+  var area = base * altura / 2
+  console.log(area)
 }
 
 
@@ -243,7 +260,9 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  console.log(dolar = euro * 1.20)
+  var euro = 23
+  var dolar = euro * 1.20
+  console.log(dolar)
 }
 
 function esVocal(letra){
@@ -252,14 +271,16 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if (lenght(letra) > 1){
-    console.log('Dato incorrecto')
-  }
-  else{
-  if (letra !== a, e, i, o, u){
-    console.log('Dato incorrecto')
+  var letra = "a"
+  if (letra === "a", "e", "i", "o", "u"){
+    console.log('Es vocal')
     }else{
-      console.log('Es vocal')
+      if (letra !== "a", "e", "i", "o", "u"){
+      console.log('Dato incorrecto')
+    } else {
+      if (letra.lenght > 1){
+        console.log("Dato incorrecto")
+      }
     }
   }
 }

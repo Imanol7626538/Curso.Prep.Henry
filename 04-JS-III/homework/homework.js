@@ -3,18 +3,24 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  const sket = ["hola", "como", "andas"];
+  console.log(sket[0]);
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  const sket = ["hola", "como", "andas"];
+  console.log(sket[array.length - 1]);
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
-  // Tu código:
+  // Tu código
+  const sket = ["hola", "como", "andas"];
+  console.log(sket.length);
 }
 
 
@@ -23,6 +29,9 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  const sket = [i];
+  for (let i = 0; i < sket.length; i++);
+  console.log(sket[i]);
 }
 
 
@@ -30,6 +39,9 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+  const sket = ["hola", "como", "andas"];
+  sket.push("elemento");
+  console.log(sket);
 }
 
 
@@ -38,6 +50,9 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  const sket = ["hola", "como", "andas"];
+  sket.unshift("elemento");
+  console.log(sket);
 }
 
 
@@ -47,6 +62,9 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  const sket = ["hola", "como", "andas"];
+  sket[1] + " " + sket[2]
+  console.log(sket[1] + " " + sket[2])
 }
 
 
@@ -54,6 +72,12 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  const sket = ["element"]
+  if (sket.length(["element"])){
+    return true
+  } else{
+    return false
+  }
 }
 
 
@@ -80,7 +104,7 @@ function numeroMasGrande(numeros) {
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
-  // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
+  // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
 }
 
