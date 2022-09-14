@@ -38,8 +38,8 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  var x = 2
-  var y = 3
+  var x  
+  var y 
   x + y
 }
 
