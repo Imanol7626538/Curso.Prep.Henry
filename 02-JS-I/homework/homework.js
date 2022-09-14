@@ -38,9 +38,9 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  var x
-  var y 
-  console.log(x + y)
+  var x = 2
+  var y = 3
+  x + y
 }
 
 function resta(x, y) {
