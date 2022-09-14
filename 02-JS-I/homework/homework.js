@@ -31,14 +31,14 @@ function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
   var str 
-  console.log(str) 
+  return(str) 
 }
 
 function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  var x 
+  var x
   var y 
   console.log(x + y)
 }
@@ -287,10 +287,10 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   var letra
-  if (letra === a, e, i, o, u){
+  if (letra === "a", "e", "i", "o", "u"){
     console.log('Es vocal')
     }else{
-      if (letra !== a, e, i, o, u){
+      if (letra !== "a", "e", "i", "o", "u"){
       console.log('Dato incorrecto')
     } else {
       if (letra.lenght > 1){
