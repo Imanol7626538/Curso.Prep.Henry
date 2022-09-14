@@ -31,7 +31,7 @@ function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
   var str 
-  return str
+  console.log(str) 
 }
 
 function suma(x, y) {
@@ -40,8 +40,7 @@ function suma(x, y) {
   // Tu código:
   var x 
   var y 
-  var resultado = x + y
-  console.log(resultado)
+  console.log(x + y)
 }
 
 function resta(x, y) {
