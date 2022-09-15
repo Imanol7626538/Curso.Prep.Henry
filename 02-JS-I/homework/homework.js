@@ -38,7 +38,6 @@ function suma(x, y) {
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
   var suma = a + b 
-  suma
 }
 
 function resta(x, y) {
